@@ -9,26 +9,18 @@ const ageDiv = getElement("ageDiv")
 const elementDiv = getElement("elementDiv");
 const button = getElement("button");
 const form = getElement("form")
+const httpMethod = getElement("httpMethod");
+const installs = document.getElementsByClassName("install")
+console.log(installs)
 
 nameInput.addEventListener("keypress", (e) => {
+  let currentInstall = "";
   if (e.key === "Enter") {
     e.preventDefault();
-    ageDiv.classList.remove("hidden");
+    currentInstall = e.target.value
+    Array.from(installs).forEach((element) => {
+      element.innerText = currentInstall
+    })
+    httpMethod.classList.remove("hidden");
   }
 });
-
-ageInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    e.preventDefault();
-    elementDiv.classList.remove("hidden");
-  }
-});
-
-elementDiv.addEventListener("click", (e) => {
-  button.classList.remove("hidden");
-});
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  
-})

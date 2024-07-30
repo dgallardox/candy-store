@@ -554,15 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.flex-col {
+  flex-direction: column;
 }
 
-.font-semibold {
-  font-weight: 600;
+.justify-center {
+  justify-content: center;
 }

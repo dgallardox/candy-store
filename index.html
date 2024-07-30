@@ -5,34 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="./dist/main.js"></script>
   <link href="./src/output.css" rel="stylesheet">
-  <title>Document</title>
+  <title>Candy Dispensor</title>
 </head>
-<body>
-  <div class="text-xl font-semibold">Hello, Sir</div>
+<body class="flex justify-center flex-col">
 
   <form id="form">
     <div>
-    <label for="name">What is your name?</label><br />
+    <label for="install">install name:</label><br />
     <input type="text" id="nameInput" />
     </div>
-
-    <div id="ageDiv" class="hidden">
-    <label for="age">What is your age?</label><br />
-    <input type="number" id="ageInput" />
-    </div>
-
-    <div class="hidden" id="elementDiv">
-      <label>Chose an element:</label><br />
-      <select>
-        <option>Water</option>
-        <option>Earth</option>
-        <option>Fire</option>
-        <option>Air</option>
-      </select>
-    </div>
-    
-    <button class="hidden" id="button" type="submit">Start Conversation</button>
   </form>
+      <div class="hidden" id="httpMethod">
+      <div>HTTP Type to /graphql</div>
+      <code>cat $nginx_log_path/<span class="install"></span>.access.log | grep "graphql" | cut -d'|' -f10 | awk '{print $1}' | sort | uniq -c</code>
+    </div>
+    <div class="hidden" id="longest Running">
+      <div>HTTP Type to /graphql</div>
+      <code>cat $nginx_log_path/<span class="install"></span>.access.log | grep "graphql" | cut -d'|' -f10 | awk '{print $1}' | sort | uniq -c</code>
+    </div>
   <div>
     <div></div>
     <div></div>
