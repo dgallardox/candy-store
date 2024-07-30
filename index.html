@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./dist/main.js"></script>
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="text-xl font-semibold">Hello, Sir</div>
+
+  <form id="form">
+    <div>
+    <label for="name">What is your name?</label><br />
+    <input type="text" id="nameInput" />
+    </div>
+
+    <div id="ageDiv" class="hidden">
+    <label for="age">What is your age?</label><br />
+    <input type="number" id="ageInput" />
+    </div>
+
+    <div class="hidden" id="elementDiv">
+      <label>Chose an element:</label><br />
+      <select>
+        <option>Water</option>
+        <option>Earth</option>
+        <option>Fire</option>
+        <option>Air</option>
+      </select>
+    </div>
+    
+    <button class="hidden" id="button" type="submit">Start Conversation</button>
+  </form>
+  <div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
